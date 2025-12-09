@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About • My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Neeraj Verma</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="cta"><a href="contact.html">Hire / Contact</a></button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="about-page">
+      <!-- profile image uses float on large screens (assignment requirement: Float for layout) -->
+      <img src="PHOTO-2025-11-30-13-53-27.jpg" height=300px,width=300px ="Profile photo" class="about-photo">
+
+      <h2>About Me</h2>
+
+      <p class="lead">
+        I am a Computer Science student (CSE - AI) passionate about designing and building small,
+        real-world projects. I love learning both frontend and backend basics, experimenting with
+        UI/UX, and making things that look good and work reliably.
+      </p>
+
+      <p>
+        Currently studying at KIET with a tuition fee waiver. I enjoy web development, Python scripting,
+        and small hardware projects. My goal is to keep learning, contribute to open-source, and build
+        a meaningful engineering portfolio by the time I graduate.
+      </p>
+
+      <p>
+        Outside of coding I enjoy music production (GarageBand), astronomy, and tinkering with electronics.
+      </p>
+
+      <div class="about-grid">
+        <div class="bio-card">
+          <h4>Education</h4>
+          <p>B.Tech (CSE - AI) — KIET (TFW)</p>
+        </div>
+        <div class="bio-card">
+          <h4>Interests</h4>
+          <p>Web dev • UI/UX • Jet engines (hobby) • Astronomy</p>
+        </div>
+        <div class="bio-card">
+          <h4>Contact</h4>
+          <p>neeraj@example.com (replace with your email)</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="yearB"></span> Neeraj Verma • Thanks for visiting</p>
+  </footer>
+
+<script>document.getElementById('yearB').textContent = new Date().getFullYear();</script>
+</body>
+</html>
