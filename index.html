@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home • My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV (shared on all pages) -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Neeraj Verma</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="cta"><a href="contact.html">Hire / Contact</a></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-left">
+      <h1 class="headline">Hi, I’m <span>Neeraj</span>.<br/>I build clean, modern websites & creative projects.</h1>
+      <p class="sub">Student • Web Developer • Designer — learning fast and shipping small, real projects.</p>
+      <div class="hero-actions">
+        <a href="skills.html" class="btn btn-primary">See my skills</a>
+        <a href="about.html" class="btn btn-ghost">About me</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- decorative colourful card -->
+      <div class="profile-card">
+        <div class="profile-glow"></div>
+        <img src="PHOTO-2025-11-30-13-53-27.jpg" height=300px,width=300px alt="Profile" class="pf-img">
+        <h3>Neeraj Verma</h3>
+        <p>Computer Science Student • CSE (AI)</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Neeraj Verma — Built with ❤️ • Simple portfolio assignment</p>
+  </footer>
+
+<script>
+  // small script to set year (purely optional; can be removed)
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
