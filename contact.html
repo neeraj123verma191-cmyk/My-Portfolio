@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Neeraj Verma</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="cta"><a href="contact.html">Hire / Contact</a></button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="contact-page">
+      <h2>Contact Me</h2>
+      <p class="lead">Have a project, doubt, or want to collaborate? Drop a message — I'll reply soon.</p>
+
+      <form class="contact-form" action="#" method="POST" novalidate>
+        <div class="row">
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email address" required>
+        </div>
+
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="yearC"></span> • Reach out anytime</p>
+  </footer>
+
+<script>document.getElementById('yearC').textContent = new Date().getFullYear();</script>
+</body>
+</html>
