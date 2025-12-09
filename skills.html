@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skills • My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Neeraj Verma</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="cta"><a href="contact.html">Hire / Contact</a></button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="skills-page">
+      <h2 class="section-title">Skills & Projects</h2>
+
+      <!-- Flexbox container for skill cards -->
+      <div class="skills-grid">
+        <article class="skill-card gradient-1">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, Flexbox, Responsive design — built multi-page sites and UI prototypes.</p>
+        </article>
+
+        <article class="skill-card gradient-2">
+          <h3>Python & Automation</h3>
+          <p>Scripts for data processing, small ML experiments, and automation tasks.</p>
+        </article>
+
+        <article class="skill-card gradient-3">
+          <h3>UI / UX Design</h3>
+          <p>Wireframing, mockups and visual polish using Figma / Canva. Focus on clarity & usability.</p>
+        </article>
+
+        <article class="skill-card gradient-4">
+          <h3>Projects</h3>
+          <p>Student portfolio, simple web apps, Arduino/ESP32 sensor demos, and more.</p>
+        </article>
+      </div>
+
+      <p class="note">Tip: Hover any card to see the elevation & glow effect.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="yearS"></span> • Crafted by Neeraj</p>
+  </footer>
+
+<script>document.getElementById('yearS').textContent = new Date().getFullYear();</script>
+</body>
+</html>
